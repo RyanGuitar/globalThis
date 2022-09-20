@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#app {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+header {
+  font-variant: small-caps;
+  font-family: Garamond, Times, serif;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  background: white;
+}
+#globalThis_logo {
+  height: 15vmin;
+  width: auto;
+}
+#globalthis_name {
+  display: block;
+  margin: auto;
+  font-size: clamp(30px, 13vmin, 110px);
+  padding-right: 6%;
+}
+
+section {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:91vmax;
+  /* background: lightgreen; */
+  /* border:1px solid black; */
+}
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shout_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  width:100%;
+}
+
+.shout {
+  font-family: "Courier New", Monospace;
+  text-align: center;
+  padding:0 3%;
+  /* background: lightcoral; */
+  letter-spacing: -2px;
+  font-size: clamp(25px, 11vmin, 100px);
+  text-shadow: 6px 6px 5px gray;
+}
+
+
+
+section img {
+  padding: 15px;
+  width: auto;
+  height: 60vmin;
+  filter: drop-shadow(1px 1px 4px gray);
+  /* display:flex;
+  justify-content: center;*/
+  /* background: lightgreen;  */
+}
+.image {
+  width:100%;
+  height:50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  /* background: lightseagreen; */
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:50%;
+  /* background:lightpink; */
+}
+
+.gray {
+  font-variant: small-caps;
+  display: block;
+  font-family: Garamond, Times, serif;
+  color: gray;
+  font-size: 1.1em;
+}
+
+.this {
+  color: gray;
+}
+
+.click {
+  font-family: Garamond, Times, serif;
+  margin-bottom: 10px;
+  display: block;
+  color: gray;
+  font-size: 10vmin;
+}
+
+
+
+h1 {
+  width: 70%;
+  text-align: center;
+}
+
+
+
+
+
+/* .options {
+  display: flex;
+}
+
+.bird {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.bird img {
+  max-width: 50vw;
+  max-height: 70vh;
+}
+
+#last {
+  padding-bottom: 3px;
+} */
+
+.green {
+  color:green;
+}
+
+
+
+
+@media only screen and (orientation: landscape) {
+  section {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: lightblue; */
+    width:100vw;
+  }
+  section {
+    height:85vmin;
+  }
+   section img {
+    height:60vmin;
+   }
+   .map_image {
+    height:55vmin;
+   }
+  .text, .image {
+    width: 50%;
+  }
+
+  /* .image {
+    width: 50%;
+  } */
+
+  .left {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
